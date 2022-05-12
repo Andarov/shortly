@@ -8,6 +8,8 @@
     --hero-bg-color: #fff;
     --form-bg-color:  #3A3054;
     --footer-bg-color:  #232127;
+    --btn-bg-color: #2BD0D0;
+    --btn-bg-hover: #9AE3E3;;
 }
 
 /* FONTS */
@@ -52,7 +54,7 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 15px;
     line-height: 26px;
     color: var(--text-color);
@@ -68,6 +70,12 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1150px;
@@ -79,4 +87,123 @@ a {
 
 .main-content {
     flex-grow: 1;
+}
+
+/* HEADER */
+.header {
+    padding-top: 48px;
+    padding-bottom: 222px;
+    background-color: var(--hero-bg-color);
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    padding-bottom: 85px;
+}
+
+.site-header-left {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.site-header__logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 45px;
+}
+
+.site-header__logo {
+    width: 120px;
+    height: 33px;
+}
+
+.site-header__items {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sitenav-item-link {
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.sitenav-item-link:hover {
+    color: var(--main-heading-text-color);
+}
+
+.login {
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--text-color);
+    margin-right: 37px;
+}
+
+.login:hover {
+    color: var(--main-heading-text-color);
+}
+
+.btn {
+    background-color: var(--btn-bg-color);
+    color: var(--white-text);
+    border-radius: 28px;
+}
+
+.btn:hover {
+    background-color: var(--btn-bg-hover);
+}
+
+.sign {
+    line-height: 22px;
+    padding: 8px 24px;
+}
+
+.site-header__hero {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero__right {
+    width: 565px;
+    margin-right: 100px;
+}
+
+.hero__heading {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: var(--main-heading-text-color);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.hero__text {
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+.btn-oval {
+    padding: 13px 40px;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.hero__bg {
+    position: absolute;
+    top: 0;
+    right: -130px;
+    left: 665px;
 }
