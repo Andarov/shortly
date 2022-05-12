@@ -1,11 +1,32 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --text-color: #9E9AA8;
+    --white-text: #fff;
+    --main-heading-text-color: #34313D;
+    --footer-text-color: #BFBFBF; 
+    --font-family: "Poppins";
+    --body-bg-color: #EFF1F7;
+    --hero-bg-color: #fff;
+    --form-bg-color:  #3A3054;
+    --footer-bg-color:  #232127;
 }
 
 /* FONTS */
-
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 500;
+    src:url("../fonts/poppins-v20-latin-500italic.woff2") format("woff2"),
+         url("../fonts/poppins-v20-latin-500italic.woff") format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src:url("../fonts/poppins-v20-latin-700.woff2") format("woff2"),
+         url("../fonts/poppins-v20-latin-700.woff") format("woff");
+    font-display: swap;   
+  }
 
 html {
     height: 100%;
@@ -32,8 +53,8 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 26px;
     color: var(--text-color);
 }
 
@@ -49,7 +70,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
