@@ -92,7 +92,6 @@ ul {
 /* HEADER */
 .header {
     padding-top: 48px;
-    padding-bottom: 222px;
     background-color: var(--hero-bg-color);
 }
 
@@ -101,7 +100,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
-    padding-bottom: 85px;
+    padding-bottom: 139px;
 }
 
 .site-header-left {
@@ -174,7 +173,7 @@ ul {
 
 .hero__right {
     width: 565px;
-    margin-right: 100px;
+    margin-bottom: 54px;
 }
 
 .hero__heading {
@@ -194,6 +193,7 @@ ul {
     margin-top: 0;
     margin-bottom: 38px;
 }
+
 .btn-oval {
     padding: 13px 40px;
     font-size: 20px;
@@ -203,7 +203,34 @@ ul {
 
 .hero__bg {
     position: absolute;
-    top: 0;
+    top: -61px;
     right: -130px;
     left: 665px;
+}
+
+.form {
+    position: relative;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px 65px;
+    border-radius: 10px;
+    background-color: var(--form-bg-color);
+    background-image: url(../img/form-bg.svg);
+}
+
+.form__input {
+    width: 769px;
+    padding: 14px 32px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: rgba(52, 49, 61, 0.5);
+    border-radius: 10px;
+}
+
+.form__btn {
+    padding: 17px 40px;
+    border-radius: 10px;
 }
