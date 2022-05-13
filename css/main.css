@@ -58,6 +58,7 @@ body {
     font-size: 15px;
     line-height: 26px;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 img {
@@ -165,8 +166,9 @@ ul {
     padding: 8px 24px;
 }
 
-.site-header__hero {
-    display: flex;
+/* HERO */
+.hero {
+    display: flex;  
     align-items: center;
     position: relative;
 }
@@ -330,4 +332,102 @@ ul {
 
 .box-text {
     margin: 0;
+}
+
+/* GET-STARTED */
+.get-started {
+    background-image: url(../img/boost-bg.svg);
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.get-started__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: var(--white-text);
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: var(--footer-bg-color);
+}
+
+.site-footer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.site-footer__logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 261px;
+}
+
+.site-footer__logo {
+    color: var(--white-text);
+}
+
+/* FOOTER__ITEMS */
+.footer-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 461px;
+    margin-right: 101px;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer__item:nth-child(1) {
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: var(--white-text);
+}
+
+.footer__item-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: var(--footer-text-color);
+}
+
+.footer__item-link:hover { 
+    color: var(--btn-bg-color);
+}
+
+/* FOOTER-LOGO-ITEMS */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 24px;
+}
+
+.footer-logo__link {
+    display: flex;
+    color: var(--white-text);
+}
+
+.footer-logo__link:hover {
+    color: var(--btn-bg-color);
 }
