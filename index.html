@@ -38,16 +38,10 @@
                 <div class="hero__right">
                     <h2 class="hero__heading">More than just shorter links</h2>
                     <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-                    <a class="btn btn-oval" href="#">Get Started</a>
+                    <a class="btn btn--oval" href="#">Get Started</a>
                 </div>
                 <img class="hero__bg" src="img/working_with_computer.png" alt="Working with  computer" width="733" height="482" srcset="img/working_with_computer.png 1x, img/working_with_computer@2x.png 2x">
             </div>
-            
-            <!-- FORM -->
-            <form class="form" action="https://htmlacademy.ru" method="get"> 
-                <input class="form__input" type="text" placeholder="Shorten a link here...">
-                <button class="btn btn-oval form__btn">Shorten It!</button>
-            </form>
         </div>
     </div>
 
@@ -56,6 +50,33 @@
     <main class="main-content">
         <div class="container">
             <section class="statistics">
+                 <!-- FORM -->
+                <form class="form js-form" action="https://htmlacademy.ru" method="get"> 
+                    <input class="form__input" type="url" placeholder="Shorten a link here..." required>
+                    <div class="form__error-msg">Please add a link</div>
+                    <button class="btn btn--oval btn--form" type="submit">Shorten It!</button>
+                </form>
+
+                <!-- Form-msg -->
+                <div class="results">
+                    <div class="results__result">
+                        <div class="result__full">https://www.frontendmentor.io</div>
+                        <a class="result__link" href="#">https://rel.ink/k4lKyk</a>
+                        <button class="btn btn--results">Copy</button>
+                    </div>
+                    <div class="results__result">
+                        <div class="result__full">https://www.frontendmentor.io</div>
+                        <a class="result__link" href="#">https://rel.ink/k4lKyk</a>
+                        <button class="btn btn--results">Copy</button>
+                    </div>
+                    <div class="results__result">
+                        <div class="result__full">https://www.frontendmentor.io</div>
+                        <a class="result__link" href="#">https://rel.ink/k4lKyk</a>
+                        <button class="btn btn--results">Copy</button>
+                    </div>
+                </div>
+
+                <!-- Statistics -->
                 <div class="statistics__about">
                     <h2 class="statistics__heading">Advanced Statistics</h2>
                     <p class="statistics__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
@@ -88,7 +109,7 @@
             <div class="container">
                 <h2 class="get-started__heading">Boost your links today</h2>
                 <div class="btn-wrapper">
-                    <a class="btn btn-oval btn-get-started" href="#">Get Started</a>
+                    <a class="btn btn--oval btn-get-started" href="#">Get Started</a>
                 </div>
             </div>
         </section>
@@ -172,5 +193,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="main.js"></script>
 </body>
 </html>
