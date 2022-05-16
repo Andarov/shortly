@@ -101,6 +101,21 @@ button {
     margin-right: auto;
 }
 
+/* Autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
 .main-content {
     flex-grow: 1;
 }
@@ -248,6 +263,7 @@ button {
     letter-spacing: 0.15px;
     color: rgba(52, 49, 61, 0.5);
     border-radius: 10px;
+    border: 3px solid transparent;
 }
 
 .form__input:not(:focus):not(:placeholder-shown):invalid {
