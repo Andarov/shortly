@@ -327,11 +327,16 @@ select:-webkit-autofill:focus {
 }
 
 .btn--results {
+    min-width: 103px;
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;  
-    padding: 10px 31px 7px;
+    padding: 10px 21px 7px;
     border-radius: 5px;
+}
+
+.btn-results-dark {
+    background-color: var(--form-bg-color);
 }
 
 /* Statistics */
