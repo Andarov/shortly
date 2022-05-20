@@ -13,9 +13,14 @@ if (elForm) {
 if (elResults) {
     elResults.addEventListener("click", function (evt) {
         if (evt.target.matches (".js-btn-results")) {
+            // Change text
             evt.target.textContent = "Copied";
 
+            // Change bgcolor
             evt.target.classList.add("btn-results-dark");
+
+            // Copy text
+            navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
 
             setTimeout(function () {
                 evt.target.textContent = "Copy";
